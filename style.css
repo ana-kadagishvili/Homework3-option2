@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.blue {
+    width: 28%;
+    height: 100%;
+    background-color:rgb(101, 146, 231) ;
+}
+.orange {
+    width: 70%;
+    height: 100%;
+    background-color:orange ;
+}
+nav {
+    width: 100%;
+    height: 300px;
+    background-color: orangered;
+    margin-bottom: 20px;
+}
+ section {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(255, 184, 30);
+    margin-bottom: 10px; 
+}
+article {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+article > div {
+    width: 32%;
+    background-color: rgb(214, 182, 37);
+}
+.div-five {
+    background-color: #FFFFFF !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div-five > div {
+    height: 20px;
+    background-color: grey;
+}
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(216, 187, 211);
+}
+
+/* For Tablets */
+@media (min-width: 480px) and (max-width: 1024px) {
+    header {
+        height: 80px;
+    }
+    nav {
+        height: 150px;
+    }
+    article {
+        height: 200px;
+    }
+    .div-five > div {
+        height: 10px;
+    }
+    footer {
+        height: 100px;
+    }
+}
+
+/* For Mobile */
+@media (max-width: 480px) {
+    header {
+        height: 50px;
+        display: block;
+        margin-bottom: 10px;
+        display: flex;
+    }
+    .blue {
+        width: 30%;
+        height: 42px;
+    }
+    .orange {
+        
+        width: 65%;
+        height: 42px;
+    }
+    nav {
+        height: 200px;
+    }
+    
+    article {
+        height: 570px;
+        display: block;
+        margin-bottom: 10px;
+        
+    }
+    article > div {
+        width: 100%;
+        height: 170px;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+    .div-five > div {
+        height: 10px;
+    }
+    footer {
+        height: 100px;
+    }
+}
